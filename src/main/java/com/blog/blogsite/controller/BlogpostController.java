@@ -30,25 +30,25 @@ public class BlogpostController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Blogpost> getEmployeeById(@PathVariable Long id) {
-        Blogpost employee = blogpostService.getBlogpostById(id);
-        return new ResponseEntity<>(employee, HttpStatus.OK);
+    public ResponseEntity<Blogpost> getBlogpostById(@PathVariable Long id) {
+        Blogpost blogpost = blogpostService.getBlogpostById(id);
+        return new ResponseEntity<>(blogpost, HttpStatus.OK);
     }
 
     @PostMapping("/add")
-    public ResponseEntity<Blogpost> addEmployee(@RequestBody Blogpost employee) {
-        Blogpost newEmployee = blogpostService.addBlogpost(employee);
-        return new ResponseEntity<>(newEmployee, HttpStatus.CREATED);
+    public ResponseEntity<Blogpost> addEmployee(@RequestBody Blogpost blogpost) {
+        Blogpost newBlogpost = blogpostService.addBlogpost(blogpost);
+        return new ResponseEntity<>(newBlogpost, HttpStatus.CREATED);
     }
 
     @PutMapping("/update")
-    public ResponseEntity<Blogpost> updateEmployee(@RequestBody Blogpost employee) {
-        Blogpost updatedEmployee = blogpostService.updateBlogpost(employee);
-        return new ResponseEntity<>(updatedEmployee, HttpStatus.OK);
+    public ResponseEntity<Blogpost> updateBlogpost(@RequestBody Blogpost blogpost) {
+        Blogpost updatedBlogpost = blogpostService.updateBlogpost(blogpost);
+        return new ResponseEntity<>(updatedBlogpost, HttpStatus.OK);
     }
 
     @DeleteMapping("/delete/{id}")
-    public ResponseEntity<Void> deleteEmployee(@PathVariable Long id) {
+    public ResponseEntity<Void> deleteBlogpost(@PathVariable Long id) {
         blogpostService.deleteBlogpost(id);
         return new ResponseEntity<>(HttpStatus.OK);
     }
