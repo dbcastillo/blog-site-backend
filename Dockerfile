@@ -1,5 +1,5 @@
 # Use an official Maven image to build the app
-FROM maven:3.8.1-openjdk-11 as build
+FROM maven:3.8.1-openjdk-17 as build
 
 # Set the working directory
 WORKDIR /app
@@ -15,7 +15,7 @@ COPY src /app/src
 RUN mvn clean install
 
 # Use a smaller OpenJDK image for running the app
-FROM openjdk:11-jre-slim
+FROM openjdk:17-jre-slim
 
 # Set the working directory
 WORKDIR /app
