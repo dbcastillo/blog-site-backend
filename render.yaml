@@ -1,8 +1,7 @@
 services:
   - type: web
     name: blog-backend
-    env: java
-    buildCommand: ./mvnw clean install
-    startCommand: ./mvnw spring-boot:run
+    env: docker
+    buildCommand: docker build -t blog-backend .
+    startCommand: docker run -p 8080:8080 blog-backend
     plan: free
-    autoDeploy: true
