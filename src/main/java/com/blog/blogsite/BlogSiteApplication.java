@@ -61,7 +61,7 @@ public class BlogSiteApplication {
 
             Blogpost blogpost6 = Blogpost.builder()
                     .title("This is my sixth blog post")
-                    .content("Hey, it's me, Derick Castillo! My blog is finally live on the web! This is still 'under construction', but I do like the clean layout. Real blogs and styles to come! Thanks for visiting! (143-BC)")
+                    .content("Hey, it's Derick Castillo, aka D-Rock! My blog is finally live on the web! This is still 'under construction', but thanks for visiting! (143-BC)")
                     .imageUrls(Arrays.asList("https://picsum.photos/308", "https://picsum.photos/309"))
                     .createdAt(java.time.LocalDateTime.now().minusDays(5))
                     .updatedAt(java.time.LocalDateTime.now().minusDays(5))
