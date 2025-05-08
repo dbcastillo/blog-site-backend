@@ -21,7 +21,7 @@ public class BlogSiteApplication {
         return args -> {
             Blogpost blogpost1 = Blogpost.builder()
                     .title("This is my very first blog post")
-                    .content("Hey, it's me Derick! I finally got my blogsite live on the internet. It's using dummy data for now but I made it responsive for mobile and web and will connect my actual blogs sometime soon. I'll also add styling and more great features soon. Thanks for visiting!.")
+                    .content("Hey, it's me Derick! I finally got my blogsite live on the internet. It's using dummy data for now but I made it responsive for mobile and web and will connect my actual blogs sometime soon. I'll also add styling and more great features soon. Thanks for visiting! (143-BC)")
                     .imageUrls(Arrays.asList("https://picsum.photos/299", "https://picsum.photos/298"))
                     .createdAt(LocalDateTime.of(2018, 7, 29, 0, 0, 0))
                     .updatedAt(LocalDateTime.of(2018, 7, 29, 0, 0, 0))
@@ -61,7 +61,7 @@ public class BlogSiteApplication {
 
             Blogpost blogpost6 = Blogpost.builder()
                     .title("This is my sixth blog post")
-                    .content("is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.")
+                    .content("Hey, it's me Derick Castillo! I finally got my blogsite live on the internet. It's using dummy data for now but I made it responsive for mobile and web and will connect my actual blogs sometime soon. I'll also add styling and more great features soon. Thanks for visiting! (143-BC)")
                     .imageUrls(Arrays.asList("https://picsum.photos/308", "https://picsum.photos/309"))
                     .createdAt(java.time.LocalDateTime.now().minusDays(5))
                     .updatedAt(java.time.LocalDateTime.now().minusDays(5))
